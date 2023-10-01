@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en">
+<head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0"><meta name="description"content="live chat"><meta name="keyword"content="live chat"><meta name="author"content="live chat">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"><meta name="google-site-verification" content="google4529c80fe439d379.html"><link rel="stylesheet"href="livechat.css"><title>Live chat</title></head> <iframe position="relative"top="0px"width="440px" height="700px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" src="https://bit.ly/tiy">
+</iframe><body></body></html>
+
+  <div class="loader"><p>Please wait</p></div>
+  <div id="content" style="display: none;">
+    
+</body>
+</html>
+
+
+<style>
+.loader {
+  border: 15px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 46%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  fnt-family:monaco;
+ text-align:center;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
+<script>
+window.onload = function() {
+  setTimeout(function() {
+    document.getElementById('content').style.display = 'block'; // Show the content after 5 seconds.
+    document.getElementsByClassName('loader')[0].style.display = 'none'; // Hide the loading animation.
+  }, 5000);
+};
+</script>
